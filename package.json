@@ -1,0 +1,43 @@
+{
+    "name": "maltsev.a.d",
+    "version": "1.0.0",
+    "description": "My shablon",
+    "private": true,
+    "main": "index.js",
+    "browserslist": [
+        "> 1%",
+        "last 3 version"
+    ],
+    "scripts": {
+        "b": "webpack --mode production",
+        "d": "webpack-dev-server --mode development --watch"
+    },
+    "keywords": [],
+    "author": "maltsev.a.d",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.8.3",
+        "@babel/preset-env": "^7.8.3",
+        "autoprefixer": "^9.7.4",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.4.2",
+        "css-mqpacker": "^7.0.0",
+        "cssnano": "^4.1.10",
+        "file-loader": "^5.0.2",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "intersection-observer": "^0.7.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.13.0",
+        "postcss": "^7.0.26",
+        "postcss-cli": "^7.1.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.1.2",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.10.1"
+    },
+    "dependencies": {}
+}
