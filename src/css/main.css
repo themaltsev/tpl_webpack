@@ -7,4 +7,5 @@ body {
 h1 {
     font-family: '2';
     color: red;
+    display: flex;
 }
