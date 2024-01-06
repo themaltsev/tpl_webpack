@@ -10,14 +10,13 @@ module.exports = {
   // mode: "production",
 
   entry: {
-    critical: "./js/critical-css.js",
-    app: "./js/app.js",
-    // entry: ['babel-polyfill', './app/js/app.js'],
+    // app: "./js/app.js",
+    entry: ['babel-polyfill', './app/js/app.js'],
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
     // filename: '[name].[contenthash].js',
-    filename: "assets/[name].js",
+    filename: "assets/[name].[ext]",
   },
 
   resolve: {
@@ -82,26 +81,6 @@ module.exports = {
       },
 
       {
-        test: /\.s[ac]ss$/i,
-        use: [
-          "style-loader",
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: { sourceMap: true },
-          },
-          {
-            loader: "postcss-loader",
-            options: { sourceMap: true, config: { path: "postcss.config.js" } },
-          },
-          {
-            loader: "sass-loader",
-            options: { sourceMap: true },
-          },
-        ],
-      },
-
-      {
         test: /\.(woff|woff2|eot|eot@|ttf|otf|svg)$/,
         use: [
           {
@@ -112,6 +91,7 @@ module.exports = {
           },
         ],
       },
+     
 
       {
         test: /\.m?js$/,

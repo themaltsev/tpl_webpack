@@ -1,4 +1,9 @@
 body {
     color: #000;
     background: #fff;
+    font-family: '1';
+}
+
+h1 {
+    font-family: '2';
 }
